@@ -1,6 +1,7 @@
 import csv
 
-with open('third.csv') as csv_file:
+filename = 'path/to/file.csv'
+with open(filename) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
     transactions = 0
     payments_sent = 0
